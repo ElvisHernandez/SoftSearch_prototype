@@ -37,10 +37,10 @@ const HelloWorld = ({API_KEY, coords, jobs}) => {
     center: coords,
     zoom: 6
     });
-    // var marker = new mapboxgl.Marker()
-    // .setLngLat(coords)
-    // .addTo(map);
     
+    var marker = new mapboxgl.Marker({color: '#a83232'})
+    .setLngLat(coords)
+    .addTo(map)
 
     filterGeoJsonPoints(geoJsonPoints(jobs))
     .forEach(({geometry}) => {
