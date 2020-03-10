@@ -1,7 +1,7 @@
 <h1>Welcome to SoftSearch!</h1>
 
 
-<%= form_with(url: "/", method: "post") do %>
+<%= form_with(url: search_maps_path, method: "post") do %>
   <%= label_tag(:q, "Search for:") %>
   <%= text_field_tag(:q) %>
   <%= submit_tag("Search") %>
