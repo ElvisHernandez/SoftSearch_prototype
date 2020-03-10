@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-1000.times do 
+100000.times do 
     Job.find_or_create_by(
         position: Faker::Job.title,
         description: Faker::Lorem.paragraph,
