@@ -1,3 +1,7 @@
 <h1>Map Search Results:</h1>
 
-<%= react_component('HelloWorld', {API_KEY: ENV['MAPBOXGL_KEY']}) %>
+<%= react_component('HelloWorld', 
+{
+    API_KEY: ENV['MAPBOXGL_KEY'],
+    coords: @coords
+}) %>
