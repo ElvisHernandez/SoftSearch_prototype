@@ -2,6 +2,7 @@ class MapsController < ApplicationController
 
     def index
         coords = Geocoder.search("#{params['location']}")
+        
         if coords.first
             p "THIS IS TRUE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #{coords.first}"
             @coords = coords.first.coordinates.reverse
@@ -12,4 +13,6 @@ class MapsController < ApplicationController
     end
 
 end
+
+
 
